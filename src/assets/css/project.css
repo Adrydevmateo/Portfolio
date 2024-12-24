@@ -1,0 +1,24 @@
+.project {
+    padding-inline: 10px;
+    margin-bottom: 30px;
+}
+
+.project__head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.project__head h3 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project__head > a svg {
+    display: flex;
+}

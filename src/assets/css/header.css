@@ -1,0 +1,98 @@
+figure {
+    margin: 0;
+}
+
+figure > img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border-radius: 24px;
+    vertical-align: middle;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-links a {
+    display: grid;
+    padding: 4px;
+    border-radius: 3px;
+    color: var(--accent-color);
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+@media (hover: hover) {
+    .contact-links a:hover {
+        background: var(--accent-color);
+        color: var(--secondary-color);
+    }
+}
+
+@media (min-width: 600px) {
+    figure {
+        width: fit-content;
+        margin: 30px 30px 44px;
+        position: relative;
+    }
+
+    figure > img {
+        max-width: 200px;
+    }
+
+    .bars-wrapper {
+        inset: -8px;
+        position: absolute;
+    }
+
+    .bars-wrapper > div {
+        position: absolute;
+        background-color: var(--accent-color);
+        opacity: 0.6;
+    }
+
+    .bar-1,
+    .bar-2 {
+        inset-block: -32px;
+        width: 0.1em;
+        mask-image: linear-gradient(
+            to top,
+            transparent,
+            white 64px,
+            white calc(100% - 64px),
+            transparent
+        );
+    }
+
+    .bar-1 {
+        right: 0;
+    }
+
+    .bar-2 {
+        left: 0;
+    }
+
+    .bar-3,
+    .bar-4 {
+        inset-inline: -32px;
+        height: 0.1em;
+        mask-image: linear-gradient(
+            to left,
+            transparent,
+            white 64px,
+            white calc(100% - 64px),
+            transparent
+        );
+    }
+
+    .bar-3 {
+        bottom: 0;
+    }
+
+    .bar-4 {
+        top: 0;
+    }
+}

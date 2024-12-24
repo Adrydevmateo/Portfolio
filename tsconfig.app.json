@@ -23,12 +23,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@components/*": ["./src/components/*"],
-      "@svg/*": ["./src/components/svg/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@img/*": ["./src/assets/img/*"],
       "@css/*": ["./src/assets/css/*"],
-      "@data/*": ["./src/data/*"]
+      "@img/*": ["./src/assets/img/*"],
+      "@data/*": ["./src/data/*"],
+      "@components/*": ["./src/components/*"]
     }
   },
   "include": ["src"]

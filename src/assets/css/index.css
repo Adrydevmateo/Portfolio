@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #0f1116;
+    --secondary-color: #f1f1f2;
+    --accent-color: #d74b0d;
+    --muted-color: #8f8f90;
+
+    scroll-behavior: smooth;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    word-wrap: break-word;
+}
+
+p,
+li {
+    color: var(--muted-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+ul {
+    padding-inline: 33px;
+}
+
+li {
+    line-height: 40px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.link svg {
+    transform: translate(4px, 2px);
+}
+
+.Index {
+    max-width: 650px;
+    margin-inline: auto;
+    padding: 10px;
+}
+
+@media (hover: hover) {
+    .link:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+        text-underline-offset: 5.5px;
+        text-decoration-style: dotted;
+    }
+
+    .link svg {
+        transition: transform 0.2s ease;
+    }
+
+    .link:hover svg {
+        transform: translate(6px, 1px);
+    }
+
+    .link svg:hover {
+        filter: brightness(200%);
+    }
+}
+
+@media (min-width: 1000px) {
+    .Index {
+        max-width: 920px;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        column-gap: 20px;
+    }
+
+    .Index > *:not(:first-child) {
+        grid-column-start: 2;
+    }
+}
+
+@media (min-width: 1140px) {
+    .Index {
+        max-width: 1000px;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Index {
+        max-width: 1100px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .Index {
+        max-width: 1200px;
+        gap: 50px;
+    }
+}
