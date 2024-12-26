@@ -2,9 +2,16 @@ import skillList from "@/data/skill";
 
 export default function Skills() {
   return (
-    <section>
+    <section style={{ marginTop: "-45px" }}>
       <h2>Skills</h2>
-      <div style={{ display: "flex", flexWrap: "wrap", columnGap: "30px" }}>
+      <div
+        style={{
+          marginTop: "-26px",
+          display: "flex",
+          flexWrap: "wrap",
+          columnGap: "30px",
+        }}
+      >
         {skillList.map((skill) => (
           <div
             className="skill"

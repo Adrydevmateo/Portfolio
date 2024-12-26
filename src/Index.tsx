@@ -8,9 +8,13 @@ export default function Index() {
   return (
     <div className="Index">
       <Header />
+      <br />
       <Experience />
+      <br />
       <Projects />
+      <br />
       <Skills />
+      <br />
       <Education />
     </div>
   );

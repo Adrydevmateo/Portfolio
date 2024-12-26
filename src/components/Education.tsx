@@ -7,7 +7,7 @@ export default function Education() {
     <section>
       <h2>Education</h2>
       {educationList.map((item) => (
-        <div key={item.name}>
+        <div className="pb" key={item.name}>
           <div
             className="education__col2"
             style={{ display: "flex", gap: "10px" }}
@@ -18,9 +18,9 @@ export default function Education() {
           <p>{item.category}</p>
         </div>
       ))}
-      <h4>Certificates</h4>
+      <h4 style={{ marginTop: "10px" }}>Certificates</h4>
       {certificateList.map((item) => (
-        <div className="certificate" key={item.name}>
+        <div className="certificate pb" key={item.name}>
           <div
             className="certificate__col2"
             style={{ display: "flex", gap: "10px" }}

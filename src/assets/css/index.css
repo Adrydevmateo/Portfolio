@@ -42,6 +42,14 @@ li {
     padding: 10px;
 }
 
+.pb {
+    padding-bottom: 10px;
+}
+
+.pb-2 {
+    padding-bottom: 30px;
+}
+
 @media (hover: hover) {
     .link:hover {
         color: var(--accent-color);
