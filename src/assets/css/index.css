@@ -79,7 +79,9 @@ li {
         column-gap: 20px;
     }
 
-    .Index > *:not(:first-child) {
+    .Index > .col-2 {
+        padding-top: 20px;
+        grid-row-start: 1;
         grid-column-start: 2;
     }
 }

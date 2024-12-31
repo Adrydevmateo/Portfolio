@@ -9,13 +9,15 @@ export default function Index() {
     <div className="Index">
       <Header />
       <br />
-      <Experience />
-      <br />
-      <Projects />
-      <br />
-      <Skills />
-      <br />
-      <Education />
+      <div className="col-2">
+        <Experience />
+        <br />
+        <Projects />
+        <br />
+        <Skills />
+        <br />
+        <Education />
+      </div>
     </div>
   );
 }
